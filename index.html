@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body.dark {
-            background-color: rgb(0, 0, 0);
-            color: aliceblue;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+
     </style>
 </head>
-
 <body>
-    <h1>The old house</h1>
-    <p>Iam finding my friend and he was hiding in a old house</p>
-    <button onclick="dark()">get in the mood</button><br><br>
-    <div>Enter your name <input type="text" id="name"></div><br><br>
-    <button onclick="scream()">Click me if you dare</button>
-
+    <h1>My hobbies</h1>
+    <p>click on the buttons and see my hobbies</p>
+    <button onclick="cricket()" style="background-color: aqua;">Cricket</button><br><br>
+    <button onclick="gaming()" style="background-color: rgb(255, 0, 0);">Gaming</button><br><br>
+    <button onclick="reading()" style="background-color: blue; color: aliceblue;">Reading</button>
+    <p id="para" style="font-size: x-large;"></p>
     <script>
-        function dark() {
-            document.body.className = "dark";
-
+        function cricket(){
+            document.getElementById("para").innerHTML = "Cricket is my favorite hobby and I love playing it whenever I get free time. I enjoy batting the most because hitting a boundary feels amazing, but bowling is also fun when I take a wicket. I usually play with my friends in the park or on the street, and it keeps me active and healthy. Watching cricket matches helps me learn new techniques, and my favorite players inspire me to improve my game. Playing cricket teaches me teamwork, discipline, and patience. Winning a match with my team always makes me happy. For me, cricket is not just a game, it’s something I truly enjoy and look forward to every day.";
         }
-        function scream() {
-            var name1 = document.getElementById("name").value;
-            alert("Dare you click me " + name1)
-
+        function gaming(){
+            document.getElementById("para").innerHTML="Gaming is my favorite hobby and I love playing games whenever I get free time. I enjoy action and adventure games the most because completing missions feels amazing, but I also like playing multiplayer games with friends. I usually play on my PC or console, and it helps me relax and have fun. Watching gaming videos and streams helps me learn new tricks and improve my skills. Gaming teaches me focus, quick decision-making, and teamwork when playing online. Winning a match or finishing a tough level always makes me feel proud. For me, gaming is not just entertainment, it’s something I truly enjoy and look forward to every day."
         }
+        function reading(){
+            document.getElementById("para").innerHTML="Reading is my favorite hobby and I love doing it whenever I get free time. I enjoy storybooks the most because getting lost in a good story feels amazing, but I also like reading about science and facts to learn new things. I usually read at night or when I am relaxing, and it helps me stay calm and focused. Reading books improves my imagination and teaches me new words every day. It also helps me understand different people and cultures through their stories. Finishing a good book always makes me happy and excited to start a new one. For me, reading is not just a habit, it’s something I truly enjoy and look forward to every day."
+        }
+        
 
     </script>
-
 </body>
-
 </html>
